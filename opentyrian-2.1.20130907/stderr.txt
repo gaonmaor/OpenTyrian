@@ -1,0 +1,7 @@
+warning: failed to open 'tyrian.cfg': No such file or directory
+warning: failed to open 'opentyrian.conf': No such file or directory
+warning: failed to open 'tyrian.sav': No such file or directory
+warning: failed to open 'joystick.conf': No such file or directory
+error: failed to open 'palette.dat': No such file or directory
+error: One or more of the required Tyrian 2.1 data files could not be found.
+       Please read the README file.

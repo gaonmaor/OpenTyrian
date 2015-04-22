@@ -1,0 +1,10 @@
+19:46:39 **** Incremental Build of configuration Debug for project opentyrian ****
+Info: Internal Builder is used for build
+gcc "-LD:\\MinGW\\mingw32\\lib\\" "-LD:\\MinGW\\msys\\1.0\\local\\bin\\" "-LD:\\MinGW\\msys\\1.0\\local\\lib\\" "-LD:\\MinGW\\msys\\1.0\\lib\\" -o opentyrian.exe xmas.o video_scale_hqNx.o video_scale.o video.o vga_palette.o vga256d.o varz.o tyrian2.o starlib.o sprite.o sndmast.o sizebuf.o shots.o setup.o scroller.o player.o picload.o pcxmast.o pcxload.o params.o palette.o opl.o opentyr.o nortvars.o nortsong.o network.o musmast.o mtrand.o mouse.o mingw_fixes.o menus.o mainint.o lvlmast.o lvllib.o loudness.o lds_play.o keyboard.o jukebox.o joystick.o helptext.o game_menu.o fonthand.o font.o file.o episodes.o editship.o destruct.o config.o cJSON.o backgrnd.o arg_parse.o animlib.o -lSDL.dll -lSDL_net.dll 
+d:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../libmingw32.a(main.o):main.c:(.text.startup+0xa7): undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+19:50:45 **** Incremental Build of configuration Debug for project opentyrian ****
+Info: Internal Builder is used for build
+gcc "-LD:\\MinGW\\mingw32\\lib\\" "-LD:\\MinGW\\msys\\1.0\\local\\bin\\" "-LD:\\MinGW\\msys\\1.0\\local\\lib\\" "-LD:\\MinGW\\msys\\1.0\\lib\\" -o opentyrian.exe xmas.o video_scale_hqNx.o video_scale.o video.o vga_palette.o vga256d.o varz.o tyrian2.o starlib.o sprite.o sndmast.o sizebuf.o shots.o setup.o scroller.o player.o picload.o pcxmast.o pcxload.o params.o palette.o opl.o opentyr.o nortvars.o nortsong.o network.o musmast.o mtrand.o mouse.o mingw_fixes.o menus.o mainint.o lvlmast.o lvllib.o loudness.o lds_play.o keyboard.o jukebox.o joystick.o helptext.o game_menu.o fonthand.o font.o file.o episodes.o editship.o destruct.o config.o cJSON.o backgrnd.o arg_parse.o animlib.o -lSDL.dll -lSDL_net.dll 
+d:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../libmingw32.a(main.o):main.c:(.text.startup+0xa7): undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status

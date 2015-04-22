@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{53AED7BB-60CE-4486-B275-2A26F0CC26E3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MSOpenTyrian</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\animlib.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\arg_parse.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\backgrnd.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\cJSON.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\config.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\destruct.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\editship.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\episodes.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\file.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\font.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\fonthand.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\game_menu.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\helptext.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\joystick.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\jukebox.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\keyboard.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\lds_play.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\loudness.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\lvllib.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\lvlmast.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\mainint.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\menus.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\mingw_fixes.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\mouse.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\mtrand.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\musmast.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\network.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\nortsong.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\nortvars.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\opentyr.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\opl.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\palette.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\params.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\pcxload.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\pcxmast.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\picload.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\player.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\scroller.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\setup.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\shots.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\sizebuf.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\sndmast.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\sprite.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\starlib.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\tyrian2.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\varz.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\vga256d.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\vga_palette.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\video.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\video_scale.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\video_scale_hqNx.c" />
+    <ClCompile Include="..\..\opentyrian-2.1.20130907\src\xmas.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\animlib.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\arg_parse.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\backgrnd.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\cJSON.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\config.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\destruct.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\editship.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\episodes.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\file.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\font.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\fonthand.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\game_menu.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\helptext.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\hg_revision.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\joystick.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\jukebox.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\keyboard.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\lds_play.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\loudness.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\lvllib.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\lvlmast.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\mainint.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\menus.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\mingw_fixes.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\mouse.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\mtrand.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\musmast.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\network.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\nortsong.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\nortvars.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\opentyr.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\opl.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\palette.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\params.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\pcxload.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\pcxmast.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\picload.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\player.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\scroller.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\setup.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\shots.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\sizebuf.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\sndmast.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\sprite.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\starlib.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\tyrian2.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\varz.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\vga256d.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\vga_palette.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\video.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\video_scale.h" />
+    <ClInclude Include="..\..\opentyrian-2.1.20130907\src\xmas.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\opentyrian-2.1.20130907\src\main.m" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

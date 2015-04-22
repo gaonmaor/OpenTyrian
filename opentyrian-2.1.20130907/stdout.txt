@@ -1,0 +1,15 @@
+
+Welcome to... >> OpenTyrian 2.1.20130907 <<
+
+Copyright (C) 2007-2013 The OpenTyrian Development Team
+
+This program comes with ABSOLUTELY NO WARRANTY.
+This is free software, and you are welcome to redistribute it
+under certain conditions.  See the file GPL.txt for details.
+
+
+Invalid or missing TYRIAN.CFG! Continuing using defaults.
+
+initialized video: 640x400x32 windowed
+joystick detected: Microsoft PC-joystick driver (0 axes, 0 buttons, 0 hats)
+assuming mouse detected
